@@ -1,0 +1,10 @@
+* source HW4_Q2(2)_ECT
+V_V1         N01374 0 5Vdc
+R_R1         N01202 N01212  1 TC=0,0 
+R_R3         N01350 N01360  1 TC=0,0 
+R_R2         0 N01202  1 TC=0,0 
+X_U1         N01360 N01202 N01374 N01222 N01212 OP-07
+C_C1         0 N01360  1u  TC=0,0 
+I_I2         N01212 0 DC 0Adc AC 0Aac 
+V_V2         0 N01222 5Vdc
+I_I1         N01350 0 DC 0Adc AC 1Aac 

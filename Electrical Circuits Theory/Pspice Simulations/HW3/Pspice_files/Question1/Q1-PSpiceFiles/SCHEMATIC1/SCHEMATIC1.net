@@ -1,0 +1,8 @@
+* source Q1
+L_L1         N00206 N00210  12mH  
+C_C1         N00192 N00210  220u  TC=0,0 
+C_C2         N00188 0  470u  TC=0,0 
+R_R1         N00192 N00206  10 TC=0,0 
+R_R2         0 N00210  0.00000001 TC=0,0 
+I_I1         0 N00210 DC 0Adc AC 2Aac 
+V_V1         N00192 N00188 DC 0Vdc AC 10Vac 

@@ -1,0 +1,85 @@
+
+**** 11/13/21 23:23:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TIME"  [ D:\ARSHAM\TERM 3\PspiceFiles\HW2_Q2_3-PSpiceFiles\SCHEMATIC1\TIME.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "TIME.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source HW2_Q2_3
+V_V1         N00855 0 1Vdc
+C_C2         N00855 V  1.7u  TC=0,0 
+R_R2         0 V  8.1k TC=0,0 
+C_C1         0 V  50u  TC=0,0 
+
+**** RESUMING TIME.cir ****
+.END
+
+**** 11/13/21 23:23:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TIME"  [ D:\ARSHAM\TERM 3\PspiceFiles\HW2_Q2_3-PSpiceFiles\SCHEMATIC1\TIME.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    V)    0.0000  (N00855)    1.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/13/21 23:23:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TIME"  [ D:\ARSHAM\TERM 3\PspiceFiles\HW2_Q2_3-PSpiceFiles\SCHEMATIC1\TIME.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        0.00
+

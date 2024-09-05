@@ -1,0 +1,48 @@
+
+**** 10/15/21 11:02:48 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC sweep"  [ D:\ARSHAM\TERM 3\PspiceFiles\HW01_Q01-PSpiceFiles\SCHEMATIC1\AC sweep.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "AC sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC LIN 10 10 10000
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source HW01_Q01
+L_L2         N00509 N00545  4mH  
+Kn_K1         L_L1 L_L2     0.408
+L_L3         0 N00545  8mH  
+L_L1         N00517 N00545  6mH  
+R_R1         0 N00517  100 TC=0,0 
+C_C1         N00509 N00517  2u  TC=0,0 
+V_V1         N00509 0 DC 0Vdc AC 120Vac 0 
+Kn_K2         L_L2 L_L3     0.177
+Kn_K3         L_L1 L_L3     0.433
+
+**** RESUMING "AC sweep.cir" ****
+.END
+
+ERROR(ORPSIM-15143): Voltage source and/or inductor loop involving L_L2. You may break the loop by adding a series resistance
+

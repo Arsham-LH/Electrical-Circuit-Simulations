@@ -1,0 +1,1 @@
+This directory contains MATLAB code for the ECT Project, which involved simulating an electrical circuit by reading a text file for input and writing the voltages, currents, and power values for each circuit element.

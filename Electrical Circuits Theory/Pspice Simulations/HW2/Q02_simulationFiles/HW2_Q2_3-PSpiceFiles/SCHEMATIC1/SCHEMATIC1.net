@@ -1,0 +1,5 @@
+* source HW2_Q2_3
+V_V1         N00855 0 1Vdc
+C_C2         N00855 V  1.7u  TC=0,0 
+R_R2         0 V  8.1k TC=0,0 
+C_C1         0 V  50u  TC=0,0 

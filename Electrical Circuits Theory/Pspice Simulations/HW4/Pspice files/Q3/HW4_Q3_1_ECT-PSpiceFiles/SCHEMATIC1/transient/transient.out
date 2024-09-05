@@ -1,0 +1,225 @@
+
+**** 01/02/22 23:07:43 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ d:\arsham\term 3\pspicefiles\hw4_q3_1_ect-pspicefiles\schematic1\transient.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "transient.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 100 100000
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source HW4_Q3_1_ECT
+R_R1         N00227 N00236  220 TC=0,0 
+R_R2         N00268 N00236  220 TC=0,0 
+R_R3         0 N00268  2.2k TC=0,0 
+R_R4         N00303 N00227  22k TC=0,0 
+R_R5         N00303 N00315  22k TC=0,0 
+R_R6         N00315 0  3.3k TC=0,0 
+X_U1A         N00227 N00315 N00590 N00573 N00303 AD712/AD
+X_U1B         N00227 N00268 N00560 N00554 N00236 AD712/AD
+V_V1         N00560 0 15Vdc
+V_V2         N00590 0 15Vdc
+V_V3         0 N00554 15Vdc
+V_V4         0 N00573 15Vdc
+I_I1         N00227 0 DC 0Adc AC 1Aac 
+
+**** RESUMING transient.cir ****
+.END
+
+**** 01/02/22 23:07:43 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ d:\arsham\term 3\pspicefiles\hw4_q3_1_ect-pspicefiles\schematic1\transient.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.DX        X_U1A.DY        X_U1A.DEN       X_U1A.DIN       
+          IS    1.000000E-15    1.000000E-15    1.000000E-12    1.000000E-12 
+          BV                   50                                            
+          RS                   10              30.909000E+03   12.090000E+03 
+         CJO    1.000000E-12    1.000000E-12                                 
+          KF                                    2.651000E-15                 
+
+
+               X_U1B.DX        X_U1B.DY        X_U1B.DEN       X_U1B.DIN       
+          IS    1.000000E-15    1.000000E-15    1.000000E-12    1.000000E-12 
+          BV                   50                                            
+          RS                   10              30.909000E+03   12.090000E+03 
+         CJO    1.000000E-12    1.000000E-12                                 
+          KF                                    2.651000E-15                 
+
+
+**** 01/02/22 23:07:43 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ d:\arsham\term 3\pspicefiles\hw4_q3_1_ect-pspicefiles\schematic1\transient.sim ] 
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.JX        X_U1B.JX        
+               PJF             PJF             
+         VTO   -2              -2            
+        BETA     .114            .114        
+          IS   20.000000E-12   20.000000E-12 
+         CGD    1.000000E-12    1.000000E-12 
+         CGS    1.000000E-12    1.000000E-12 
+
+
+**** 01/02/22 23:07:43 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ d:\arsham\term 3\pspicefiles\hw4_q3_1_ect-pspicefiles\schematic1\transient.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00227)  -13.6210 (N00236)  -13.6190 (N00268)  -12.3810 (N00303)  -13.9010     
+
+(N00315)   -1.8132 (N00554)  -15.0000 (N00560)   15.0000 (N00573)  -15.0000     
+
+(N00590)   15.0000 (X_U1A.4)  -14.0320                   (X_U1A.5)  -15.0000    
+
+(X_U1A.6)  -14.3370                   (X_U1A.7)  -13.6210                       
+
+(X_U1A.8)   13.7000                   (X_U1A.9)  -13.9340                       
+
+(X_U1B.4)  -14.1030                   (X_U1B.5)  -14.9420                       
+
+(X_U1B.6)  -14.3950                   (X_U1B.7)  -13.6220                       
+
+(X_U1B.8)   13.7000                   (X_U1B.9)  -13.9290                       
+
+(X_U1A.10)  -13.1000                  (X_U1A.16) -153.9600                      
+
+(X_U1A.17)-154.0E-06                  (X_U1A.18)  -13.9340                      
+
+(X_U1A.24)-888.2E-18                  (X_U1A.25)  -13.2260                      
+
+(X_U1A.26)  -14.5760                  (X_U1A.27)   35.3880                      
+
+(X_U1A.28)   14.3170                  (X_U1A.29)  -13.9010                      
+
+(X_U1A.41)    2.0000                  (X_U1A.42)    0.0000                      
+
+(X_U1A.43)   -2.0000                  (X_U1A.44)    2.0000                      
+
+(X_U1A.45) 2.666E-15                  (X_U1A.46)   -2.0000                      
+
+(X_U1A.47)    2.0000                  (X_U1A.48) 666.6E-18                      
+
+(X_U1A.49)   -2.0000                  (X_U1A.60)  -13.6210                      
+
+(X_U1A.98)-888.2E-18                  (X_U1B.10)  -13.1000                      
+
+(X_U1B.16) -259.3700                  (X_U1B.17)-259.4E-06                      
+
+(X_U1B.18)  -13.9290                  (X_U1B.24)-888.2E-18                      
+
+(X_U1B.25)  -12.9440                  (X_U1B.26)  -14.2940                      
+
+(X_U1B.27)   35.4720                  (X_U1B.28)   14.2590                      
+
+(X_U1B.29)  -13.6190                  (X_U1B.41)    2.0000                      
+
+(X_U1B.42)-958.3E-18                  (X_U1B.43)   -2.0000                      
+
+(X_U1B.44)    2.0000                  (X_U1B.45) 666.6E-18                      
+
+(X_U1B.46)   -2.0000                  (X_U1B.47)    2.0000                      
+
+(X_U1B.48) 2.666E-15                  (X_U1B.49)   -2.0000                      
+
+(X_U1B.60)  -13.6220                  (X_U1B.98)-888.2E-18                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.056E-03
+    V_V2        -5.056E-03
+    V_V3         7.191E-02
+    V_V4         9.450E-02
+    X_U1A.VN1   -4.987E-05
+    X_U1A.VN2   -4.987E-05
+    X_U1A.VN3   -1.255E-04
+    X_U1A.VN4   -1.255E-04
+    X_U1A.VN5   -1.255E-04
+    X_U1A.VN6   -1.255E-04
+    X_U1A.V2     2.763E-11
+    X_U1A.V3    -1.001E-01
+    X_U1A.V4    -7.083E-13
+    X_U1A.V5    -6.437E-13
+    X_U1B.VN1   -4.987E-05
+    X_U1B.VN2   -4.987E-05
+    X_U1B.VN3   -1.255E-04
+    X_U1B.VN4   -1.255E-04
+    X_U1B.VN5   -1.255E-04
+    X_U1B.VN6   -1.255E-04
+    X_U1B.V2     2.763E-11
+    X_U1B.V3    -8.258E-02
+    X_U1B.V4    -9.862E-13
+    X_U1B.V5    -3.658E-13
+
+    TOTAL POWER DISSIPATION  -2.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/02/22 23:07:43 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-transient"  [ d:\arsham\term 3\pspicefiles\hw4_q3_1_ect-pspicefiles\schematic1\transient.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .09
+

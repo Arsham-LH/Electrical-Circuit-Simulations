@@ -1,0 +1,11 @@
+* source HW01_Q01
+L_L2         N00509 N00545  4mH  
+Kn_K1         L_L1 L_L2     0.408
+L_L3         0 N00545  8mH  
+L_L1         N00517 N00545  6mH  
+R_R1         0 N00517  100 TC=0,0 
+C_C1         N00509 N00517  2u  TC=0,0 
+V_V1         N01001 0 DC 0Vdc AC 120Vac 0 
+Kn_K2         L_L2 L_L3     0.177
+Kn_K3         L_L1 L_L3     0.433
+R_R2         N01001 N00509  0.001 TC=0,0 

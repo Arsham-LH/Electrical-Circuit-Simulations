@@ -1,0 +1,9 @@
+.ALIASES
+L_L1            L1(1=N00206 2=N00210 ) CN @Q1.SCHEMATIC1(sch_1):INS26@ANALOG.L.Normal(chips)
+C_C1            C1(1=N00192 2=N00210 ) CN @Q1.SCHEMATIC1(sch_1):INS51@ANALOG.C.Normal(chips)
+C_C2            C2(1=N00188 2=0 ) CN @Q1.SCHEMATIC1(sch_1):INS67@ANALOG.C.Normal(chips)
+R_R1            R1(1=N00192 2=N00206 ) CN @Q1.SCHEMATIC1(sch_1):INS92@ANALOG.R.Normal(chips)
+R_R2            R2(1=0 2=N00210 ) CN @Q1.SCHEMATIC1(sch_1):INS436@ANALOG.R.Normal(chips)
+I_I1            I1(+=0 -=N00210 ) CN @Q1.SCHEMATIC1(sch_1):INS557@SOURCE.IAC.Normal(chips)
+V_V1            V1(+=N00192 -=N00188 ) CN @Q1.SCHEMATIC1(sch_1):INS608@SOURCE.VAC.Normal(chips)
+.ENDALIASES

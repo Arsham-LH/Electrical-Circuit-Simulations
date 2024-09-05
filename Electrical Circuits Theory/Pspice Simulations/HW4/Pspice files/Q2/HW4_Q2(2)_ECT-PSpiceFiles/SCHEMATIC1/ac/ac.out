@@ -1,0 +1,169 @@
+
+**** 01/01/22 22:06:28 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac"  [ d:\arsham\term 3\pspicefiles\hw4_q2(2)_ect-PSpiceFiles\SCHEMATIC1\ac.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ac.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1000 1000000
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source HW4_Q2(2)_ECT
+V_V1         N01374 0 5Vdc
+R_R1         N01202 N01212  1 TC=0,0 
+R_R3         N01350 N01360  1 TC=0,0 
+R_R2         0 N01202  1 TC=0,0 
+X_U1         N01360 N01202 N01374 N01222 N01212 OP-07
+C_C1         0 N01360  1u  TC=0,0 
+I_I2         N01212 0 DC 0Adc AC 0Aac 
+V_V2         0 N01222 5Vdc
+I_I1         N01350 0 DC 0Adc AC 1Aac 
+
+**** RESUMING ac.cir ****
+.END
+
+**** 01/01/22 22:06:28 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac"  [ d:\arsham\term 3\pspicefiles\hw4_q2(2)_ect-PSpiceFiles\SCHEMATIC1\ac.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.dx         X_U1.dy         
+          IS  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03 
+         CJO                   10.000000E-12 
+
+
+**** 01/01/22 22:06:28 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac"  [ d:\arsham\term 3\pspicefiles\hw4_q2(2)_ect-PSpiceFiles\SCHEMATIC1\ac.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qx         
+               NPN             
+       LEVEL    1            
+          IS  800.000000E-18 
+          BF    3.000000E+03 
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 01/01/22 22:06:28 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac"  [ d:\arsham\term 3\pspicefiles\hw4_q2(2)_ect-PSpiceFiles\SCHEMATIC1\ac.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01202)    -.0306 (N01212)    -.0612 (N01222)   -5.0000 (N01350)    -.1849     
+
+(N01360)    -.1849 (N01374)    5.0000 (X_U1.6)     .5949 (X_U1.7)   -1.2848     
+
+(X_U1.8)   -1.2848 (X_U1.9)    0.0000 (X_U1.10)    -.6199                       
+
+(X_U1.11)    4.9473                   (X_U1.12)    4.9999                       
+
+(X_U1.13)    -.6185                   (X_U1.14)    -.6199                       
+
+(X_U1.53)    4.0000                   (X_U1.54)   -4.0000                       
+
+(X_U1.90)  -30.5900                   (X_U1.91)   30.0000                       
+
+(X_U1.92)  -30.0000                   (X_U1.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -8.372E-04
+    V_V2        -8.373E-04
+    X_U1.vb      5.949E-06
+    X_U1.vc      4.062E-12
+    X_U1.ve      4.487E-12
+    X_U1.vlim   -3.059E-02
+    X_U1.vlp    -6.059E-11
+    X_U1.vln     6.573E-06
+
+    TOTAL POWER DISSIPATION   8.18E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/01/22 22:06:28 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-ac"  [ d:\arsham\term 3\pspicefiles\hw4_q2(2)_ect-PSpiceFiles\SCHEMATIC1\ac.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .08
+

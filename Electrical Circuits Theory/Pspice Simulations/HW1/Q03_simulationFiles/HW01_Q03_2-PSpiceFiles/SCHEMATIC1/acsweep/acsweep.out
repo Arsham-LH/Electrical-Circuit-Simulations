@@ -1,0 +1,251 @@
+
+**** 10/16/21 23:38:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-acsweep"  [ D:\ARSHAM\TERM 3\PspiceFiles\HW01_Q03_2-PSpiceFiles\SCHEMATIC1\acsweep.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "acsweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC LIN 1 60 60
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source HW01_Q03_2
+V_V6         N03005 0 DC 0Vdc AC 1200.3Vac 90
+V_V4         N02647 0 DC 0Vdc AC 1200.3Vac -30
+V_V2         N03119 0 DC 0Vdc AC 2079Vac -120
+L_L3         N02771 N02641  11.9mH  
+V_V5         N02887 0 DC 0Vdc AC 1200.3Vac -150
+L_L6         N03005 N03153  3.97mH  
+R_R3         N02641 N02415  0.9 TC=0,0 
+R_R5         N02893 N02899  0.3 TC=0,0 
+R_R1         N02991 N02761  0.9 TC=0,0 
+L_L4         N02647 N02521  3.97mH  
+R_R6         N03153 N03215  0.3 TC=0,0 
+L_L1         N02653 N02527  11.9mH  
+R_R2         N02527 N02415  0.9 TC=0,0 
+V_V3         0 N02771 DC 0Vdc AC 2079Vac 120
+L_L2         N03119 N02991  11.9mH  
+R_R4         N02521 N02385  0.3 TC=0,0 
+V_V1         N02653 N02761 DC 0Vdc AC 2079Vac 0
+L_L5         N02887 N02893  3.97mH  
+V_PRINT2         N03537 N02385 0V
+          
+.PRINT        AC 
++ IM(V_PRINT2) 
++ IP(V_PRINT2)    
+V_PRINT3         N03537 N02899 0V
+          
+.PRINT        AC 
++ IM(V_PRINT3) 
++ IP(V_PRINT3)    
+V_PRINT4         N03537 N03215 0V
+          
+.PRINT        AC 
++ IM(V_PRINT4) 
++ IP(V_PRINT4)    
+V_PRINT5         N03749 0 0V
+          
+.PRINT        AC 
++ IM(V_PRINT5) 
++ IP(V_PRINT5)    
+V_PRINT6         N03749 N02415 0V
+          
+.PRINT        AC 
++ IM(V_PRINT6) 
++ IP(V_PRINT6)    
+V_PRINT7         N03749 N02761 0V
+          
+.PRINT        AC 
++ IM(V_PRINT7) 
++ IP(V_PRINT7)    
+
+**** RESUMING acsweep.cir ****
+.END
+
+**** 10/16/21 23:38:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-acsweep"  [ D:\ARSHAM\TERM 3\PspiceFiles\HW01_Q03_2-PSpiceFiles\SCHEMATIC1\acsweep.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N02385)    0.0000 (N02415)    0.0000 (N02521)    0.0000 (N02527)    0.0000     
+
+(N02641)    0.0000 (N02647)    0.0000 (N02653)    0.0000 (N02761)    0.0000     
+
+(N02771)    0.0000 (N02887)    0.0000 (N02893)    0.0000 (N02899)    0.0000     
+
+(N02991)    0.0000 (N03005)    0.0000 (N03119)    0.0000 (N03153)    0.0000     
+
+(N03215)    0.0000 (N03537)    0.0000 (N03749)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V6         0.000E+00
+    V_V4         0.000E+00
+    V_V2         0.000E+00
+    V_V5         0.000E+00
+    V_V3         0.000E+00
+    V_V1         0.000E+00
+    V_PRINT2     0.000E+00
+    V_PRINT3     0.000E+00
+    V_PRINT4     0.000E+00
+    V_PRINT5     0.000E+00
+    V_PRINT6     0.000E+00
+    V_PRINT7     0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 10/16/21 23:38:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-acsweep"  [ D:\ARSHAM\TERM 3\PspiceFiles\HW01_Q03_2-PSpiceFiles\SCHEMATIC1\acsweep.sim ] 
+
+
+ ****     AC ANALYSIS                      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+  FREQ        IM(V_PRINT2)IP(V_PRINT2)
+
+
+   6.000E+01   7.863E+02   7.133E+01
+
+**** 10/16/21 23:38:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-acsweep"  [ D:\ARSHAM\TERM 3\PspiceFiles\HW01_Q03_2-PSpiceFiles\SCHEMATIC1\acsweep.sim ] 
+
+
+ ****     AC ANALYSIS                      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+  FREQ        IM(V_PRINT3)IP(V_PRINT3)
+
+
+   6.000E+01   7.863E+02  -4.867E+01
+
+**** 10/16/21 23:38:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-acsweep"  [ D:\ARSHAM\TERM 3\PspiceFiles\HW01_Q03_2-PSpiceFiles\SCHEMATIC1\acsweep.sim ] 
+
+
+ ****     AC ANALYSIS                      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+  FREQ        IM(V_PRINT4)IP(V_PRINT4)
+
+
+   6.000E+01   7.863E+02  -1.687E+02
+
+**** 10/16/21 23:38:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-acsweep"  [ D:\ARSHAM\TERM 3\PspiceFiles\HW01_Q03_2-PSpiceFiles\SCHEMATIC1\acsweep.sim ] 
+
+
+ ****     AC ANALYSIS                      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+  FREQ        IM(V_PRINT5)IP(V_PRINT5)
+
+
+   6.000E+01   7.870E+02  -1.687E+02
+
+**** 10/16/21 23:38:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-acsweep"  [ D:\ARSHAM\TERM 3\PspiceFiles\HW01_Q03_2-PSpiceFiles\SCHEMATIC1\acsweep.sim ] 
+
+
+ ****     AC ANALYSIS                      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+  FREQ        IM(V_PRINT6)IP(V_PRINT6)
+
+
+   6.000E+01   7.870E+02   7.134E+01
+
+**** 10/16/21 23:38:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-acsweep"  [ D:\ARSHAM\TERM 3\PspiceFiles\HW01_Q03_2-PSpiceFiles\SCHEMATIC1\acsweep.sim ] 
+
+
+ ****     AC ANALYSIS                      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+  FREQ        IM(V_PRINT7)IP(V_PRINT7)
+
+
+   6.000E+01   7.870E+02  -4.866E+01
+
+
+          JOB CONCLUDED
+
+**** 10/16/21 23:38:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-acsweep"  [ D:\ARSHAM\TERM 3\PspiceFiles\HW01_Q03_2-PSpiceFiles\SCHEMATIC1\acsweep.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .05
+

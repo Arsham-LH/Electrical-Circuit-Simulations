@@ -1,0 +1,90 @@
+
+**** 12/29/21 12:17:17 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ D:\ARSHAM\TERM 3\PspiceFiles\HW4_Q1_ECT-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source HW4_Q1_ECT
+R_R1         A B  3 TC=0,0 
+R_R2         A B  1 TC=0,0 
+R_R3         0 A  1 TC=0,0 
+R_R4         0 A  2 TC=0,0 
+R_R5         0 B  3 TC=0,0 
+V_V1         A 0 1Vdc
+V_V2         B 0 1Vdc
+
+**** RESUMING bias.cir ****
+.END
+
+**** 12/29/21 12:17:17 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ D:\ARSHAM\TERM 3\PspiceFiles\HW4_Q1_ECT-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    A)    1.0000  (    B)    1.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.500E+00
+    V_V2        -3.333E-01
+
+    TOTAL POWER DISSIPATION   1.83E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/29/21 12:17:17 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ D:\ARSHAM\TERM 3\PspiceFiles\HW4_Q1_ECT-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =         .84
+  Total job time (using Solver 1)   =         .03
+

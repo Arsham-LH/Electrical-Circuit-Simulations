@@ -1,0 +1,67 @@
+* source HW1_Q4_1
+V_V4         N03922 0 DC 0Vdc AC 200Vac 0
+R_R4         N03896 N03840  3 TC=0,0 
+V_V5         N04042 0 DC 0Vdc AC 200Vac -120
+R_R5         N04048 N040160  3 TC=0,0 
+V_V6         N04108 0 DC 0Vdc AC 200Vac 120
+R_R6         N04134 N04160  3 TC=0,0 
+L_L4         N03922 N03896  10.6mH  
+L_L6         N04108 N04134  10.6mH  
+L_L5         N04042 N04048  10.6mH  
+R_R7         N043501 N04738  30 TC=0,0 
+L_L7         N05137 N043501  106mH  
+L_L8         N05149 N044341  106mH  
+R_R8         N044341 N04773  30 TC=0,0 
+R_R9         N045181 N04868  30 TC=0,0 
+L_L9         N05143 N045181  106mH  
+C_C2         N04773 N04753  58.9u  TC=0,0 
+C_C3         N04773 N04777  58.9u  TC=0,0 
+C_C4         N05837 N046351  58.9u  TC=0,0 
+R_R10         N04753 N04745  60 TC=0,0 
+R_R11         N046351 N04738  60 TC=0,0 
+R_R12         N04777 N04781  60 TC=0,0 
+V_PRINT1         N03840 N04738 0V
+          
+.PRINT        AC 
++ IM(V_PRINT1) 
++ IP(V_PRINT1)    
+V_PRINT2         N040160 N04773 0V
+          
+.PRINT        AC 
++ IM(V_PRINT2) 
++ IP(V_PRINT2)    
+V_PRINT3         N04160 N04868 0V
+          
+.PRINT        AC 
++ IM(V_PRINT3) 
++ IP(V_PRINT3)    
+V_PRINT4         N04738 N04745 0V
+          
+.PRINT        AC 
++ IM(V_PRINT4) 
++ IP(V_PRINT4)    
+V_PRINT5         N04781 N04868 0V
+          
+.PRINT        AC 
++ IM(V_PRINT5) 
++ IP(V_PRINT5)    
+V_PRINT6         N04868 N05837 0V
+          
+.PRINT        AC 
++ IM(V_PRINT6) 
++ IP(V_PRINT6)    
+V_PRINT7         N05137 0 0V
+          
+.PRINT        AC 
++ IM(V_PRINT7) 
++ IP(V_PRINT7)    
+V_PRINT8         N05149 0 0V
+          
+.PRINT        AC 
++ IM(V_PRINT8) 
++ IP(V_PRINT8)    
+V_PRINT9         N05143 0 0V
+          
+.PRINT        AC 
++ IM(V_PRINT9) 
++ IP(V_PRINT9)    

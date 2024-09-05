@@ -1,0 +1,89 @@
+
+**** 12/13/21 00:35:08 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ D:\ARSHAM\TERM 3\PspiceFiles\Q1-PSpiceFiles\SCHEMATIC1\trans.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "trans.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC LIN 1000 900 1500
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source Q1
+L_L1         N00206 N00210  12mH  
+C_C1         N00192 N00210  220u  TC=0,0 
+C_C2         N00188 0  470u  TC=0,0 
+R_R1         N00192 N00206  10 TC=0,0 
+R_R2         0 N00210  0.00000001 TC=0,0 
+I_I1         0 N00210 DC 0Adc AC 2Aac 
+V_V1         N00192 N00188 DC 0Vdc AC 10Vac 
+
+**** RESUMING trans.cir ****
+.END
+
+**** 12/13/21 00:35:08 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ D:\ARSHAM\TERM 3\PspiceFiles\Q1-PSpiceFiles\SCHEMATIC1\trans.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00188)    0.0000 (N00192)    0.0000 (N00206)    0.0000 (N00210)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/13/21 00:35:08 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ D:\ARSHAM\TERM 3\PspiceFiles\Q1-PSpiceFiles\SCHEMATIC1\trans.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

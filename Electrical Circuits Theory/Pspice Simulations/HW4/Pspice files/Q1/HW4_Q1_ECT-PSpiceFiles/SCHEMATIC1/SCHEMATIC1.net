@@ -1,0 +1,8 @@
+* source HW4_Q1_ECT
+R_R1         A B  3 TC=0,0 
+R_R2         A B  1 TC=0,0 
+R_R3         0 A  1 TC=0,0 
+R_R4         0 A  2 TC=0,0 
+R_R5         0 B  3 TC=0,0 
+V_V1         A 0 1Vdc
+V_V2         B 0 1Vdc

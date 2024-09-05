@@ -1,0 +1,8 @@
+* source HW2_Q1(2)
+R_R1         N00239 N00208  2.3k TC=0,0 
+R_R2         0 V  1.9k TC=0,0 
+C_C1         N00239 N00208  1.7u  TC=0,0 
+C_C2         0 N00208  9.1u  TC=0,0 
+C_C3         0 N00239  1u  TC=0,0 
+L_L1         N00208 V  2.7mH  
+I_I1         N00239 0 DC 0Adc AC 1Aac 

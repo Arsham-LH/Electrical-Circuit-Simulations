@@ -1,0 +1,12 @@
+* source HW01_Q02
+L_L1         N00245 0  8mH  
+L_L2         N00226 0  18mH  
+L_L3         N00219 0  16mH  
+L_L4         N00293 0  25mH  
+R_R1         N00219 N00226  200 TC=0,0 
+R_R2         0 N00245  1k TC=0,0 
+Kn_K1         L_L1 L_L2     0.5
+Kn_K2         L_L3 L_L4     0.7
+V_V1         N00287 0 DC 0Vdc AC 1Vac {p} 
+R_R3         N00287 N00293  0.002 TC=0,0 
+.PARAM  p=75
