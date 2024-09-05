@@ -1,0 +1,90 @@
+; Top Design: "prj1_lib:cell_1:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="prj1_lib:cell_1:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=4
+"BJTM1":BJT1  N__2 N__14 N__37 Mode=1 Noise=yes 
+model BJTM1 BJT NPN=1 PNP=0 Is=2f Bf=100 Vaf=100 Cje=0.5 pF Vje=0.65 Mje=0.5 Cjc=0.5 pF Vjc=0.65 Mjc=0.5 Cjs=1p Vjs=0.65 Mjs=0.5 Tf=0.1 nsec Lateral=0 RbModel=0 Approxqb=1 
+"BJTM1":BJT2  N__41 N__16 N__39 Mode=1 Noise=yes 
+"BJTM1":BJT3  N__6 N__24 N__43 Mode=1 Noise=yes 
+"BJTM1":BJT4  vo N__28 N__10 Mode=1 Noise=yes 
+R:R1  N__13 N__14 R=683.5 kOhm Noise=yes 
+R:R2  N__37 N__12 R=20 kOhm Noise=yes 
+R:R3  N__17 N__16 R=50 kOhm Noise=yes 
+R:R4  N__19 N__41 R=8 kOhm Noise=yes 
+R:R5  N__16 N__20 R=50 kOhm Noise=yes 
+R:R6  N__39 N__22 R=5.875 kOhm Noise=yes 
+R:R7  N__25 N__24 R=466.5 kOhm Noise=yes 
+R:R8  N__43 N__26 R=2k Noise=yes 
+R:R9  N__29 N__28 R=532.7 kOhm Noise=yes 
+R:R10  N__31 vo R=2.9 kOhm Noise=yes 
+R:Rs  vin N__32 R=10 kOhm Noise=yes 
+C:C1  N__32 N__14 C=0.1 mF 
+C:C2  N__37 N__16 C=0.1 mF 
+C:C3  N__39 0 C=0.1 mF 
+C:C4  N__41 N__24 C=0.1 mF 
+C:C5  N__43 N__28 C=0.1 mF 
+V_Source:SRC1  N__13 0 Type="V_DC" Vdc=3.0 V SaveCurrent=1 
+V_Source:SRC2  N__2 0 Type="V_DC" Vdc=3.0 V SaveCurrent=1 
+V_Source:SRC3  N__17 0 Type="V_DC" Vdc=3.0 V SaveCurrent=1 
+V_Source:SRC4  N__19 0 Type="V_DC" Vdc=3.0 V SaveCurrent=1 
+V_Source:SRC5  N__25 0 Type="V_DC" Vdc=3.0 V SaveCurrent=1 
+V_Source:SRC6  N__6 0 Type="V_DC" Vdc=3.0 V SaveCurrent=1 
+V_Source:SRC7  N__29 0 Type="V_DC" Vdc=3.0 V SaveCurrent=1 
+V_Source:SRC8  N__31 0 Type="V_DC" Vdc=3.0 V SaveCurrent=1 
+V_Source:SRC9  0 N__12 Type="V_DC" Vdc=3.0 V SaveCurrent=1 
+V_Source:SRC10  0 N__20 Type="V_DC" Vdc=3.0 V SaveCurrent=1 
+V_Source:SRC11  0 N__22 Type="V_DC" Vdc=3.0 V SaveCurrent=1 
+V_Source:SRC12  0 N__26 Type="V_DC" Vdc=3.0 V SaveCurrent=1 
+V_Source:SRC13  0 N__10 Type="V_DC" Vdc=3.0 V SaveCurrent=1 
+V_Source:SRC14  vin 0 Type="V_AC" Vdc=0.0 V Vac=polar(10,0) V Freq=100 Hz V_Noise=0 uV SaveCurrent=1 
+Tran:Tran1 StartTime=0.0 msec StopTime=100.0 msec MaxTimeStep=0.5 msec LimitStepForTL=yes TimeStepControl=2 TruncTol=7.0 ChargeTol=1.0e-14 IntegMethod=0 MaxGearOrder=2 \
+Mu=0.5 MaxOrder=4 Freq[1]=1.0 GHz Order[1]=3 HB_Window=no \
+HB_Sol=no ImpApprox=no ShortTL_Delay=1.0 psec ImpMode=1 UseInitCond=no \
+LoadGminDC=no CheckKCL=yes CheckOnlyDeltaV=yes OverloadAlert=no DeviceBypass=no \
+MaxIters=10 MaxItersDC=200 DevOpPtLevel=0 StatusLevel=2 OutputAllPoints=yes \
+NoiseScale=1 ImpEnforcePassivity=yes \
+OutputPlan="Tran1_Output" 
+
+OutputPlan:Tran1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+
+
+__debug_ImpLFEOff=0 
+AC:AC1 CalcNoise=no SortNoise=0 IncludePortNoise=yes BandwidthForNoise=1 Hz FreqConversion=no UseFiniteDiff=no StatusLevel=2 OutputBudgetIV=no DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="AC1_stim" OutputPlan="AC1_Output" 
+
+SweepPlan: AC1_stim Start=0.1 kHz Stop=0.1 kHz Step=0 GHz 
+
+OutputPlan:AC1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+

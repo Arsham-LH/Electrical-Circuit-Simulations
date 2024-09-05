@@ -1,0 +1,21 @@
+
+hpeesofsim (*) 550.update0.2 Sep 22 2021, MINT version 5
+    (64-bit windows built: Tue Sep 21, 2021 21:32:30 +0000)
+
+
+***** Simulation started at Fri Jun  3 19:49:08 2022
+      Running on host: "DESKTOP-J5KL6IC"
+      In Directory: "F:\arsham\TERM 4\Electronic 2\Projects\1\prj1\data"
+      Process ID: 8392
+
+
+
+TRAN Tran1[1] <prj1_lib:cell_1:schematic>   time=(0 s->100 ms)
+
+
+AC AC1[1] <prj1_lib:cell_1:schematic>   freq=100 Hz
+
+
+Resource usage:
+  Total stopwatch time     =     1.97 seconds.
+
